@@ -27,53 +27,56 @@
 <!-- Wrapper-->
 <div id="wrap">
 
+    <div class="row">
 
-    <!-- Container -->
-    <div class="container">
-        @include('layouts.navbar')
-        @if(Session::has('error'))
-            <div clas="row">
-            <div class="alert alert-danger">
-                <h2>{{ Session::get('error') }}</h2>
-            </div>
-            </div>
-            @endif
-            @if(Session::has('success'))
-            <div clas="row">
-                <div class="alert alert-success">
-                    <h2>{{ Session::get('success') }}</h2>
+        <!-- Container -->
+        <div class="container">
+            @include('layouts.navbar')
+            @if(Session::has('error'))
+                <div clas="row">
+                <div class="alert alert-danger">
+                    <h2>{{ Session::get('error') }}</h2>
                 </div>
-            </div>
+                </div>
                 @endif
-            @if(Session::has('info'))
-                    <div clas="row">
-                <div class="alert alert-info">
-                    <h2>{{ Session::get('info') }}</h2>
-                </div>
+                @if(Session::has('success'))
+                <div clas="row">
+                    <div class="alert alert-success">
+                        <h2>{{ Session::get('success') }}</h2>
                     </div>
-                @endif
-            @if(Session::has('warning'))
-                  <div clas="row">
-                <div class="alert alert-warning">
-                    <h2>{{ Session::get('warning') }}</h2>
                 </div>
-                  </div>
-                @endif
-        <!-- Notifications -->
-{{--        <div class="notifications">
-            @include('layouts/notifications')
-        </div>--}}
-        <!-- Content -->
-        <div class="content">
-            @yield('content')
-            <!-- ./ content -->
-        </div>
+                    @endif
+                @if(Session::has('info'))
+                        <div clas="row">
+                    <div class="alert alert-info">
+                        <h2>{{ Session::get('info') }}</h2>
+                    </div>
+                        </div>
+                    @endif
+                @if(Session::has('warning'))
+                      <div clas="row">
+                    <div class="alert alert-warning">
+                        <h2>{{ Session::get('warning') }}</h2>
+                    </div>
+                      </div>
+                    @endif
+            <!-- Notifications -->
+    {{--        <div class="notifications">
+                @include('layouts/notifications')
+            </div>--}}
+            <!-- Content -->
+            <div class="content col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                @yield('content')
+                <!-- ./ content -->
+            </div>
 
-{{--
-        @yield('disqus')
---}}
-    </div>
-        <!-- ./ container -->
+    {{--
+            @yield('disqus')
+    --}}
+        </div>
+            <!-- ./ container -->
+    </div> 
+        <!-- ./ row -->
 @include('layouts.footer')
     </div>
 @include('layouts.js_foot')
