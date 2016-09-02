@@ -14,7 +14,7 @@
 @section('content')
     <div class="row">
             @foreach($gods as $civ)
-            <div class="text-center">
+            <div class="row text-center" id ="civ_row_{{ $loop->iteration }}">
                 @foreach($civ as $god)
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                     <a class="btn" href="gods/{{$god->slug}}"><img alt="{{$god->name}}" src="images/{{$god->image}}" /></a>
