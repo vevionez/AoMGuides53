@@ -11,7 +11,6 @@
 @stop
 
 @section('content')
-    <div class="container">
         <div class="row">
             <div class="col_lg_2">
                 <h2>AOM:EE Clans:</h2>
@@ -59,5 +58,4 @@
                 </p>
             </div>
         </div>
-    </div>
 @stop

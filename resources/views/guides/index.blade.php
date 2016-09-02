@@ -12,7 +12,6 @@
 
 {{-- Content --}}
 @section('content')
-    <div class="container">
         <div class="row">
             @if(Auth::check())
                 You want to create some more fucking guides? Well good luck with that! <a href="guides/create">HERE!</a>
@@ -93,5 +92,4 @@
             </ul>
 
         </div>
-    </div>
 @stop

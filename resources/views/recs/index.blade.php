@@ -12,7 +12,6 @@
 
 {{-- Content --}}
 @section('content')
-    <div class="container">
         <div class="row">
             @if(Auth::check())
                 You want to create some more fucking Recorded Games? Well good luck with that! <a href="recorded_games/create">HERE!</a>
@@ -58,5 +57,4 @@
             </ul>
 
         </div>
-    </div>
 @stop

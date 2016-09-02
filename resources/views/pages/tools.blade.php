@@ -11,7 +11,6 @@
 @stop
 
 @section('content')
-    <div class="container">
     <div class="row">
         <div class="col_lg_2">
             <h2>Useful AOM:EE Steamworkshop Mods:</h2>
@@ -58,6 +57,5 @@
                 <li></li>
             </ul>
         </div>
-    </div>
     </div>
 @stop
