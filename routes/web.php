@@ -10,6 +10,9 @@
 | to using a Closure or controller method. Build something great!
 |
 */
+
+Route::auth();
+
 Route::get('/', array('as' => 'home', 'uses' => 'HomeController@index'));
 
 Route::bind('gods', function($value, $route) {
