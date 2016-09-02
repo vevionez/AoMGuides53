@@ -29,8 +29,10 @@
 
 
     <!-- Container -->
-    <div class="container">
+    <div class="container container-nav">
         @include('layouts.navbar')
+        </div>
+    <div class="container container-content">
         @if(Session::has('error'))
             <div clas="row">
             <div class="alert alert-danger">
@@ -74,8 +76,12 @@
 --}}
     </div>
         <!-- ./ container -->
+    <div clas="container container-footer">
 @include('layouts.footer')
-    </div>
+        </div>
+
+</div>
+<!-- ./ wrapper -->
 @include('layouts.js_foot')
 
 </body>
