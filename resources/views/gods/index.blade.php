@@ -12,6 +12,7 @@
 
 {{-- Content --}}
 @section('content')
+    <div class="row">
             @foreach($gods as $civ)
             <div class="text-center">
                 @foreach($civ as $god)
@@ -33,5 +34,5 @@
                 @if(Auth::check())
                     You want to create some more fucking gods? Well good luck with that! <a href="gods/create">HERE!</a>
                     @endif
-
+    </div>
 @stop
