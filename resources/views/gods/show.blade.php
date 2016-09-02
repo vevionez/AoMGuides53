@@ -1,0 +1,66 @@
+@extends('layouts.default')
+
+{{-- Web site Title --}}
+@section('title')
+    @parent
+    Guides & Recorded Games for {{ $god->name }}
+@stop
+@section('description')
+    @parent
+    Guides & Recorded Games for {{ $god->name }}. {{ $god->name }} is a god choice in Age of Mythology: The Titans
+@stop
+
+@section('content')
+
+    <br><br><br><br>
+    <img alt="{{$god->name}}" src="/images/{{$god->image}}" />
+    <br>
+    This is {{ $god->name }}
+<br>
+    Here is a bunch of guides to get you started on playing {{ $god->name }}! <br/><br/>
+@foreach($guides as $guide)
+        <a href="/guides/{{$guide['slug']}}">{{ $guide['name'] }}</a> Votes: {{$guide['votes']}} Views: {{$guide['views']}}
+        @if(! Session::get('voted_guide_' . $guide['id']))
+            <div class="vote" style="display: inline-block;">
+                {!! Form::open(array('route' => array('guides.upvote', $guide['slug']), 'method' => 'PATCH')) !!}
+                <button type="submit" class="btn btn-default" style="border: 0; background: transparent; color: #ff0000;"><i class="fa fa-angle-double-up fa-2x"></i></button>
+                {!! Form::close() !!}
+            </div>
+            <div class="vote" style="display: inline-block;">
+                {!! Form::open(array('route' => array('guides.downvote', $guide['slug'],), 'method' => 'PATCH')) !!}
+                <button type="submit" class="btn btn-default" style="border: 0; background: transparent; color: #ff0000;"><i class="fa fa-angle-double-down fa-2x"></i></button>
+                {!! Form::close() !!}
+            </div>
+        @endif
+    <br>
+@endforeach
+    <br/>
+    And here a bunch of recorded games of {{ $god->name }} plays! <br/><br/>
+    @foreach($recs as $recgame)
+    <a href="/recorded_games/{{$recgame['slug']}}">{{ $recgame['name'] }}</a> Votes: {{$recgame['votes']}} Views: {{$recgame['views']}}
+    @if(! Session::get('voted_rec_' . $recgame['id']))
+        <div class="vote" style="display: inline-block;">
+        {!! Form::open(array('route' => array('recs.upvote', $recgame['slug']), 'method' => 'PATCH')) !!}
+        <button type="submit" class="btn btn-default" style="border: 0; background: transparent; color: #ff0000;"><i class="fa fa-angle-double-up fa-2x"></i></button>
+        {!! Form::close() !!}
+        </div>
+            <div class="vote" style="display: inline-block;">
+        {!! Form::open(array('route' => array('recs.downvote', $recgame['slug'],), 'method' => 'PATCH')) !!}
+        <button type="submit" class="btn btn-default" style="border: 0; background: transparent; color: #ff0000;"><i class="fa fa-angle-double-down fa-2x"></i></button>
+        {!! Form::close() !!}
+            </div>
+    @endif
+        @endforeach
+        <br>
+    <div class="youtube_links">
+        <h4>Youtube Videos:</h4>
+        <ul>
+        @foreach($videos as $video)
+            <li><a href="{{$video['link']}}">{{$video['name']}}</a> - By: <small>{{$video['author']}}</small></li>
+            @endforeach
+        </ul>
+    </div>
+    <br>
+    <br>
+    {!! link_to_route('gods.index','Back to Index') !!}
+@stop
