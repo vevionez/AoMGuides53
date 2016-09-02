@@ -33,7 +33,7 @@ class RecsController extends Controller {
 	 */
 	public function create()
 	{
-        $gods = gods::lists('name', 'id');
+        $gods = gods::pluck('name', 'id');
         return view('recs.create', compact('gods'));
 	}
 
@@ -90,7 +90,7 @@ class RecsController extends Controller {
 	 */
 	public function edit(Recs $rec)
 	{
-        $gods = gods::lists('name', 'id');
+        $gods = gods::pluck('name', 'id');
         return view('recs.edit', compact('rec', 'gods'));
 	}
 

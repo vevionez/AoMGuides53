@@ -32,7 +32,7 @@ class GuidesController extends Controller {
 	 */
 	public function create()
 	{
-        $gods = gods::lists('name', 'id');
+        $gods = gods::pluck('name', 'id');
         return view('guides.create', compact('gods'));
 	}
 
