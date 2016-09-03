@@ -42,8 +42,9 @@
                         </ul>
                     </li>
                 @else
-                    @include('layouts.login')
-                <li><a href="{{ URL::to('/register') }}">register</a></li>
+                    {{--@include('layouts.login')--}}
+                    <li><a href="{{ URL::to('/login') }}">Login</a></li>
+                <li><a href="{{ URL::to('/register') }}">Register</a></li>
                     @endif
             </ul>
         </div><!--/.nav-collapse -->
