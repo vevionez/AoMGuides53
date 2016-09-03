@@ -27,7 +27,7 @@
 <!-- Wrapper-->
 <div id="wrap">
 
-    <img class="logo-main" src="/images/AoM_Logo_trans.png" width="500" alt="Age of Mythology Guides Logo">
+    <a class="logo_link" href="/"><img class="logo-main" src="/images/AoM_Logo_trans.png" width="500" alt="Age of Mythology Guides Logo"></a>
     <!-- Container -->
     <div class="container container-nav">
         @include('layouts.navbar')
