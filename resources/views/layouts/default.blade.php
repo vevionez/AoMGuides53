@@ -27,7 +27,7 @@
 <!-- Wrapper-->
 <div id="wrap">
 
-    <img class="logo-main" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/32877/logo-thing.png" width="200" alt="Logo Thing main logo">
+    <img class="logo-main" src="/images/AoM_Logo_trans.png" width="200" alt="Logo Thing main logo">
     <!-- Container -->
     <div class="container container-nav">
         @include('layouts.navbar')
