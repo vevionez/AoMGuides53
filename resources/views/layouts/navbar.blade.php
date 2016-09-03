@@ -22,10 +22,10 @@
             <!--Right side Navigation -->
             <ul class="nav navbar-nav navbar-right">
                 @if(Auth::check())
-                <li><a href="{{ URL::to('/auth/logout') }}">logout</a></li>
+                <li><a href="{{ URL::to('/logout') }}">logout</a></li>
                 @else
                     @include('layouts.login')
-                <li><a href="{{ URL::to('/auth/register') }}">register</a></li>
+                <li><a href="{{ URL::to('/register') }}">register</a></li>
                     @endif
             </ul>
         </div><!--/.nav-collapse -->
