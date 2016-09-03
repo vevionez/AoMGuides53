@@ -60,4 +60,10 @@ div.most-popular-guides img.screenshot {
 .content{
   background-color: rgba(25, 24, 20, 1);
 }
+.container{
+  border: 20px solid black;
+  border-image-source: url(http://i.imgur.com/DCSSv7A.png);
+  border-image-slice: 20 22;
+  border-image-repeat: round;
+}
 #login-nav input { margin-bottom: 15px; }
