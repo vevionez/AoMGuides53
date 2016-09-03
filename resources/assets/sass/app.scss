@@ -1,5 +1,9 @@
 $icon-font-path: "/fonts/bootstrap/";
 $fa-font-path:   "/fonts/fontawesome";
+.logo-main{
+  display: block;
+  margin: 20px auto;
+}
 body {
   padding-top: 70px;
   color: rgb(201, 202, 145);
@@ -59,6 +63,7 @@ div.most-popular-guides img.screenshot {
 }
 .content{
   background-color: rgba(25, 24, 20, 1);
+  padding: 10px;
 }
 .footer{
   background-color: rgba(25, 24, 20, 1);
