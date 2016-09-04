@@ -33,7 +33,7 @@
                     </li>
                 </ul>
 
-                <h2>Voobly Clans::</h2>
+                <h2>Voobly Clans:</h2>
                 <ul>
                     <li>
                         <a href="http://twistedclan.voobly.com/">TwIsTeD Clan</a>
@@ -47,14 +47,14 @@
                     <li></li>
                 </ul>
                 <p>
-                    Want your clan here? Drop us a message with the following information:
+                    Want your clan here? Drop us a message with the following information:<br><br>
 
-                    Clan Logo; (Optional)
-                    Clan leader:
-                    Clan founded (date):
-                    Aom:EE/Voobly/both:
-                    Clan website url:
-                    Misc:(Any info here that you'd like displayed on the website, goals, motto's slogans anything at all =)
+                    Clan Logo; (Optional) <br>
+                    Clan leader:<br>
+                    Clan founded (date):<br>
+                    Aom:EE/Voobly/both:<br>
+                    Clan website url:<br>
+                    Misc:(Any info here that you'd like displayed on the website, goals, motto's slogans anything at all =)<br>
                 </p>
             </div>
         </div>
