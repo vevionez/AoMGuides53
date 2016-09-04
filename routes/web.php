@@ -15,13 +15,13 @@ Route::auth();
 
 Route::get('/', array('as' => 'home', 'uses' => 'HomeController@index'));
 
-Route::bind('gods', function($value, $route) {
+Route::bind('god', function($value, $route) {
     return App\gods::whereSlug($value)->first();
 });
-Route::bind('guides', function($value, $route) {
+Route::bind('guide', function($value, $route) {
     return App\guides::whereSlug($value)->first();
 });
-Route::bind('recorded_games', function($value, $route) {
+Route::bind('recorded_game', function($value, $route) {
     return App\Recs::whereSlug($value)->first();
 });
 
