@@ -45,7 +45,7 @@ class RecsController extends Controller {
 	public function store(Request $request)
 	{
         $this->validate($request, [
-            'file_path' => 'required|mimes:rcx,zip,svx,rar',
+            'file_path' => 'required|mimes:rcx,zip,svx,rar,RCX,ZIP,SVX,RAR',
         ]);
         if ($request->hasFile('file_path')){
                 $image = $request->file('file_path');
