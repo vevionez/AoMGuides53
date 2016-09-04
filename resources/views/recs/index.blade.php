@@ -22,7 +22,7 @@
                         <li>
                             @if(Auth::check())
                                 {!! Form::open(array('class' => 'form-inline', 'method' => 'DELETE', 'route' => array('recorded_games.destroy', $rec->slug))) !!}
-                                <a class="btn" href="recorded_games/{{$rec->slug}}">{{$rec->name}}</a>
+                                <a class="btn" href="recorded_games/{{$rec->slug}}">{{$rec->name}}</a> - By: <small>{{$rec->author}}</small>
                                 {!! link_to_route('recorded_games.edit', 'Edit', $rec->slug, array('class' => 'btn btn-info')) !!}
                                 {!! Form::submit('Delete', array('class' => 'btn btn-danger')) !!}
                                 @if($rec->votes > 100)

@@ -22,7 +22,7 @@
                     <li>
                         @if(Auth::check())
                             {!! Form::open(array('class' => 'form-inline', 'method' => 'DELETE', 'route' => array('guides.destroy', $guide->slug))) !!}
-                            <a class="btn" href="guides/{{$guide->slug}}">{{$guide->name}}</a>
+                            <a class="btn" href="guides/{{$guide->slug}}">{{$guide->name}}</a> - By: <small>{{$guide->author}}</small>
                             {!! link_to_route('guides.edit', 'Edit', $guide->slug, array('class' => 'btn btn-info')) !!}
                             {!! Form::submit('Delete', array('class' => 'btn btn-danger')) !!}
                             @if($guide->votes > 100)
