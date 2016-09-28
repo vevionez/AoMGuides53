@@ -49,23 +49,34 @@ class HomeController extends Controller {
 
 	public function streams()
 	{
-		// client ID : pny7awiybq67iag14dsmn7ycb90l37d
-		$clientId = "pny7awiybq67iag14dsmn7ycb90l37d";
-		$ch = curl_init();
+		// client ID - playground : pny7awiybq67iag14dsmn7ycb90l37d
+		function getstreamsbygame($game){
+			$clientId = "pny7awiybq67iag14dsmn7ycb90l37d"; // playground ID, change to own id when live
+			$ch = curl_init();
 
-		curl_setopt_array($ch, array(
-			CURLOPT_HTTPHEADER => array(
-				'Client-ID: ' . $clientId
-			),
-			CURLOPT_RETURNTRANSFER => true,
-			CURLOPT_URL => "https://api.twitch.tv/kraken/streams?game=World%20of%20Warcraft"
-		));
+			curl_setopt_array($ch, array(
+				CURLOPT_HTTPHEADER => array(
+					'Client-ID: ' . $clientId
+				),
+				CURLOPT_RETURNTRANSFER => true,
+				CURLOPT_URL => "https://api.twitch.tv/kraken/streams?game=" . $game
+			));
 
-		$aomeestreams = curl_exec($ch);
-		curl_close($ch);
+			$streams = curl_exec($ch);
+			curl_close($ch);
 
-		dd($aomeestreams);
-		return view('pages.streams');
+			return $streams;
+		}
+
+		//aom:tt Age%20of%20Mythology%3A%20The%20Titans
+		//aom:ee Age%20of%20Mythology%3A%20Extended%20Edition
+		//aom : Age%20of%20Mythology
+		$aomeestreams = getstreamsbygame("Age%20of%20Mythology%3A%20Extended%20Edition");
+		$aomttstreams = getstreamsbygame("Age%20of%20Mythology%3A%20The%20Titans");
+		$aomstreams = getstreamsbygame("Age%20of%20Mythology");
+
+
+		return view('pages.streams', compact("aomeestreams", "aomttstreams", "aomstreams"));
 	}
 
 }
