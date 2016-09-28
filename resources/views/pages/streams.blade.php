@@ -39,9 +39,6 @@
 
                 @endforeach
             @endif
-            <pre>
-            {{ var_dump($aomeestreams) }}
-                </pre>
             <h2>AOM:TT Streams:</h2>
             @if($aomttstreams['_total'] != 0)
                 @foreach($aomttstreams['streams'] as $stream)
@@ -67,10 +64,6 @@
                     </div>
                 @endforeach
             @endif
-
-            <pre>
-            {{ var_dump($aomttstreams) }}
-            </pre>
             <h2>AOM Vanilla Streams:</h2>
             @if($aomstreams['_total'] != 0)
                 @foreach($aomstreams['streams'] as $stream)
@@ -96,10 +89,15 @@
                     </div>
                 @endforeach
             @endif
-
-            <pre>
-            {{ var_dump($aomstreams) }}
-            </pre>
         </div>
     </div>
+    <script>
+        $(document).ready(function(){
+            $("#watch").click(function(){
+                $("#twitchtoggle").toggle();
+                $('#twitchstream').attr('src', '<?php echo $stream['channel']['url'] . "/embed"; ?>');
+                $('#twitchchat').attr('src', '<?php echo "http://twitch.tv/chat/embed?channel=" . $stream['channel']['name'] . "&popout_chat=true"; ?>');
+            });
+        });
+    </script>
 @stop
