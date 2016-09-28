@@ -65,7 +65,7 @@ class HomeController extends Controller {
 			$streams = curl_exec($ch);
 			curl_close($ch);
 
-			return json_decode($streams);
+			return json_decode($streams , true);
 		}
 
 		//aom:tt Age%20of%20Mythology%3A%20The%20Titans
