@@ -23,13 +23,13 @@
                     <li>
                         status: {{ $stream['channel']['status']  }}
                     </li>
-                    <li>Viewers: {{ $stream['channel']['views'] }}</li>
+                    <li>Viewers: {{ $stream['viewers'] }}</li>
                     <li>Followers: {{ $stream['channel']['followers'] }}</li>
                     <li>
                         url: <a href="{{ $stream['channel']['url']  }}">{{ $stream['channel']['url']  }}</a>
                     </li>
                 </ul>
-                    <button id='watch'>Watch Live!</button>";
+                    <button id='watch'>Watch Live!</button>
                     <div id='twitchtoggle' style='display: none'>
                         <iframe id='twitchstream' frameborder='0' scrolling='no' height='378' width='620'></iframe>
                         <div id='chat'>
@@ -52,13 +52,13 @@
                         <li>
                             status: {{ $stream['channel']['status']  }}
                         </li>
-                        <li>Viewers: {{ $stream['channel']['views'] }}</li>
+                        <li>Viewers: {{ $stream['viewers'] }}</li>
                         <li>Followers: {{ $stream['channel']['followers'] }}</li>
                         <li>
                             url: <a href="{{ $stream['channel']['url']  }}">{{ $stream['channel']['url']  }}</a>
                         </li>
                     </ul>
-                    <button id='watch'>Watch Live!</button>";
+                    <button id='watch'>Watch Live!</button>
                     <div id='twitchtoggle' style='display: none'>
                         <iframe id='twitchstream' frameborder='0' scrolling='no' height='378' width='620'></iframe>
                         <div id='chat'>
@@ -81,13 +81,13 @@
                         <li>
                             status: {{ $stream['channel']['status']  }}
                         </li>
-                        <li>Viewers: {{ $stream['channel']['views'] }}</li>
+                        <li>Viewers: {{ $stream['viewers'] }}</li>
                         <li>Followers: {{ $stream['channel']['followers'] }}</li>
                         <li>
                             url: <a href="{{ $stream['channel']['url']  }}">{{ $stream['channel']['url']  }}</a>
                         </li>
                     </ul>
-                    <button id='watch'>Watch Live!</button>";
+                    <button id='watch'>Watch Live!</button>
                     <div id='twitchtoggle' style='display: none'>
                         <iframe id='twitchstream' frameborder='0' scrolling='no' height='378' width='620'></iframe>
                         <div id='chat'>
