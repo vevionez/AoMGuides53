@@ -14,26 +14,9 @@
     <div class="row">
         <div class="col_lg_2">
             <h2>AOM:EE Streams:</h2>
-
-            <ul>
-                <li>
-
-                </li>
-                <li>
-
-                </li>
-                <li>
-
-                </li>
-            </ul>
-
+            {{ var_dump($aomeestreams) }}
             <h2>AOM:TT Streams:</h2>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+            {{ var_dump($aomttstreams) }}
         </div>
     </div>
 @stop
