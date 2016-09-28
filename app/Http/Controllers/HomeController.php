@@ -49,6 +49,8 @@ class HomeController extends Controller {
 
 	public function streams()
 	{
+		$aomeestreams = json_decode( @file_get_contents( "https://api.twitch.tv/kraken/streams?game=CS:GO", true));
+		dd($aomeestreams);
 		return view('pages.streams');
 	}
 
