@@ -17,6 +17,7 @@
                 <li {{ (Request::is('recorded_games*') ? 'class=active' : '') }}><a href="{{ URL::to('/recorded_games') }}">Recorded Games</a></li>
                 <li {{ (Request::is('tools*') ? 'class=active' : '') }}><a href="{{ URL::to('/tools') }}">Tools & Mods</a></li>
                 <li {{ (Request::is('clans*') ? 'class=active' : '') }}><a href="{{ URL::to('/clans') }}">Clans</a></li>
+                <li {{ (Request::is('streams*') ? 'class=active' : '') }}><a href="{{ URL::to('/streams') }}">Streams</a></li>
                 <li {{ (Request::is('contact_us*') ? 'class=active' : '') }}><a href="{{ URL::to('/contact_us') }}">Contact Us</a></li>
             </ul>
             <!--Right side Navigation -->
