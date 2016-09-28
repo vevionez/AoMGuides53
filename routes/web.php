@@ -36,3 +36,4 @@ Route::post('contact_request', 'MailController@getContactUsForm');
 Route::get('contact_us', array('as' => 'contact_us', 'uses' => 'MailController@showcontactform'));
 Route::get('tools', array('as' => 'tools', 'uses' => 'HomeController@tools'));
 Route::get('clans', array('as' => 'clans', 'uses' => 'HomeController@clans'));
+Route::get('streams', array('as' => 'streams', 'uses' => 'HomeController@streams'));

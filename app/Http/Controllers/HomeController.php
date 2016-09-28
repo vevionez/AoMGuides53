@@ -47,4 +47,9 @@ class HomeController extends Controller {
 		return view('pages.clans');
 	}
 
+	public function streams()
+	{
+		return view('pages.streams');
+	}
+
 }
