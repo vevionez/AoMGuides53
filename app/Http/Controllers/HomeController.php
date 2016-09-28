@@ -49,7 +49,21 @@ class HomeController extends Controller {
 
 	public function streams()
 	{
-		$aomeestreams = json_decode( @file_get_contents( "https://api.twitch.tv/kraken/streams?game=World%20of%20Warcraft", true));
+		// client ID : pny7awiybq67iag14dsmn7ycb90l37d
+		$clientid = "pny7awiybq67iag14dsmn7ycb90l37d";
+		$ch = curl_init();
+
+		curl_setopt_array($ch, array(
+			CURLOPT_HTTPHEADER => array(
+				'Client-ID: ' . $clientId
+			),
+			CURLOPT_RETURNTRANSFER => true,
+			CURLOPT_URL => "https://api.twitch.tv/kraken/streams?game=World%20of%20Warcraft"
+		));
+
+		$aomeestreams = curl_exec($ch);
+		curl_close($ch);
+
 		dd($aomeestreams);
 		return view('pages.streams');
 	}
