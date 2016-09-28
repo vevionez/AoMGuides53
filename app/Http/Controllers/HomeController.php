@@ -49,7 +49,7 @@ class HomeController extends Controller {
 
 	public function streams()
 	{
-		$aomeestreams = json_decode( @file_get_contents( "https://api.twitch.tv/kraken/streams?game=StarCraft+II%3A+Heart+of+the+Swarm", true));
+		$aomeestreams = json_decode( @file_get_contents( "https://api.twitch.tv/kraken/streams?game=World%20of%20Warcraft", true));
 		dd($aomeestreams);
 		return view('pages.streams');
 	}
