@@ -17,3 +17,14 @@
 <script>
     $.backstretch("/images/background.jpg");
 </script>
+
+<!-- does not belong here and should be removed -->
+<script>
+    $(document).ready(function(){
+        $("#watch").click(function(){
+            $("#twitchtoggle").toggle();
+            $('#twitchstream').attr('src', '<?php echo $stream['channel']['url'] . "/embed"; ?>');
+            $('#twitchchat').attr('src', '<?php echo "http://twitch.tv/chat/embed?channel=" . $stream['channel']['name'] . "&popout_chat=true"; ?>');
+        });
+    });
+</script>
