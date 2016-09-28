@@ -50,7 +50,7 @@ class HomeController extends Controller {
 	public function streams()
 	{
 		// client ID : pny7awiybq67iag14dsmn7ycb90l37d
-		$clientid = "pny7awiybq67iag14dsmn7ycb90l37d";
+		$clientId = "pny7awiybq67iag14dsmn7ycb90l37d";
 		$ch = curl_init();
 
 		curl_setopt_array($ch, array(
