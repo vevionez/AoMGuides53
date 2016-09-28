@@ -23,8 +23,10 @@
                     <li>
                         status: {{ $stream['channel']['status']  }}
                     </li>
+                    <li>Viewers: {{ $stream['channel']['views'] }}</li>
+                    <li>Followers: {{ $stream['channel']['followers'] }}</li>
                     <li>
-                        url: {{ $stream['channel']['url']  }}
+                        url: <a href="{{ $stream['channel']['url']  }}">{{ $stream['channel']['url']  }}</a>
                     </li>
                 </ul>
 
@@ -34,6 +36,25 @@
             {{ var_dump($aomeestreams) }}
                 </pre>
             <h2>AOM:TT Streams:</h2>
+            @if($aomttstreams['_total'] != 0)
+                @foreach($aomttstreams['streams'] as $stream)
+                    <ul>
+                        <li>
+                            Streamer: {{ $stream['channel']['display_name']  }}
+                        </li>
+                        <li>
+                            status: {{ $stream['channel']['status']  }}
+                        </li>
+                        <li>Viewers: {{ $stream['channel']['views'] }}</li>
+                        <li>Followers: {{ $stream['channel']['followers'] }}</li>
+                        <li>
+                            url: <a href="{{ $stream['channel']['url']  }}">{{ $stream['channel']['url']  }}</a>
+                        </li>
+                    </ul>
+
+                @endforeach
+            @endif
+
             <pre>
             {{ var_dump($aomttstreams) }}
             </pre>
