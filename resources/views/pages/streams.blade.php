@@ -30,10 +30,11 @@
                     </li>
                 </ul>
                     <a href="{{ $stream['channel']['url']  }}/embed" target="twitchstream_{{$stream['_id']}}"><button id='watch'>Watch Live!</button></a>
-                    <div id='twitchtoggle_{{$stream['_id']}}' style='display: none'>
+                    <a href="http://twitch.tv/chat/embed?channel={{$stream['channel']['name']}}&popout_chat=true" target="twitchchat_{{$stream['_id']}}"><button id='watch'>Open Chat!</button></a>
+                    <div id='twitchtoggle_{{$stream['_id']}}' >
                         <iframe name="twitchstream_{{$stream['_id']}}" id='twitchstream_{{$stream['_id']}}' frameborder='0' scrolling='no' height='378' width='620'></iframe>
                         <div id='chat'>
-                            <iframe name="twitchstream_{{$stream['_id']}}" id='twitchchat_{{$stream['_id']}}' frameborder='0' scrolling='no' class='chat_embed' height='378' width='620'></iframe>
+                            <iframe name="twitchchat_{{$stream['_id']}}" id='twitchchat_{{$stream['_id']}}' frameborder='0' scrolling='no' class='chat_embed' height='378' width='620'></iframe>
                         </div>
                     </div>
 
@@ -56,10 +57,11 @@
                         </li>
                     </ul>
                     <a href="{{ $stream['channel']['url']  }}/embed" target="twitchstream_{{$stream['_id']}}"><button id='watch'>Watch Live!</button></a>
-                    <div id='twitchtoggle_{{$stream['_id']}}' style='display: none'>
+                    <a href="http://twitch.tv/chat/embed?channel={{$stream['channel']['name']}}&popout_chat=true" target="twitchchat_{{$stream['_id']}}"><button id='watch'>Open Chat!</button></a>
+                    <div id='twitchtoggle_{{$stream['_id']}}' >
                         <iframe name="twitchstream_{{$stream['_id']}}" id='twitchstream_{{$stream['_id']}}' frameborder='0' scrolling='no' height='378' width='620'></iframe>
                         <div id='chat'>
-                            <iframe name="twitchstream_{{$stream['_id']}}" id='twitchchat_{{$stream['_id']}}' frameborder='0' scrolling='no' class='chat_embed' height='378' width='620'></iframe>
+                            <iframe name="twitchchat_{{$stream['_id']}}" id='twitchchat_{{$stream['_id']}}' frameborder='0' scrolling='no' class='chat_embed' height='378' width='620'></iframe>
                         </div>
                     </div>
                 @endforeach
@@ -81,10 +83,11 @@
                         </li>
                     </ul>
                     <a href="{{ $stream['channel']['url']  }}/embed" target="twitchstream_{{$stream['_id']}}"><button id='watch'>Watch Live!</button></a>
-                    <div id='twitchtoggle_{{$stream['_id']}}' style='display: none'>
+                    <a href="http://twitch.tv/chat/embed?channel={{$stream['channel']['name']}}&popout_chat=true" target="twitchchat_{{$stream['_id']}}"><button id='watch'>Open Chat!</button></a>
+                    <div id='twitchtoggle_{{$stream['_id']}}' >
                         <iframe name="twitchstream_{{$stream['_id']}}" id='twitchstream_{{$stream['_id']}}' frameborder='0' scrolling='no' height='378' width='620'></iframe>
                         <div id='chat'>
-                            <iframe name="twitchstream_{{$stream['_id']}}" id='twitchchat_{{$stream['_id']}}' frameborder='0' scrolling='no' class='chat_embed' height='378' width='620'></iframe>
+                            <iframe name="twitchchat_{{$stream['_id']}}" id='twitchchat_{{$stream['_id']}}' frameborder='0' scrolling='no' class='chat_embed' height='378' width='620'></iframe>
                         </div>
                     </div>
                 @endforeach
