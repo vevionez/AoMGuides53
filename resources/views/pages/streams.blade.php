@@ -14,17 +14,17 @@
     <div class="row">
         <div class="col_lg_2">
             <h2>AOM:EE Streams:</h2>
-            @if($aomeestreams["_total"] > 0)
-            @foreach($aomeestreams["streams"] as $stream)
+            @if($aomeestreams['_total'] != 0)
+            @foreach($aomeestreams['streams'] as $stream)
                 <ul>
                     <li>
-                        Streamer: {{ $stream["channel"]["display_name"]  }}
+                        Streamer: {{ $stream['channel']['display_name']  }}
                     </li>
                     <li>
-                        status: {{ $stream["channel"]["status"]  }}
+                        status: {{ $stream['channel']['status']  }}
                     </li>
                     <li>
-                        url: {{ $stream["channel"]["url"]  }}
+                        url: {{ $stream['channel']['url']  }}
                     </li>
                 </ul>
 
