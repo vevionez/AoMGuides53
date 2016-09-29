@@ -14,6 +14,10 @@
     <div class="row">
         <div class="col_lg_2">
             <h2>AOM:EE Streams:</h2>
+
+            <p>
+                All streams are automatically pulled from twitch servers. Every single streamer that is currently streaming Age of Mythology will be listed here!
+            </p>
             @if($aomeestreams['_total'] != 0)
             @foreach($aomeestreams['streams'] as $stream)
                 <img src="{{$stream['preview']['small']}}">
