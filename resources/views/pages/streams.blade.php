@@ -23,7 +23,7 @@
                     <li>
                         Streamer: {{ $stream['channel']['display_name']  }}
                     </li>
-                    <li>Steam started on: {{ $stream['display_name']  }}</li>
+                    <li>Steam started on: {{ $stream['created_at']  }}</li>
                     <li>
                         status: {{ $stream['channel']['status']  }}
                     </li>
@@ -52,7 +52,7 @@
                         <li>
                             Streamer: {{ $stream['channel']['display_name']  }}
                         </li>
-                        <li>Steam started on: {{ $stream['display_name']  }}</li>
+                        <li>Steam started on: {{ $stream['created_at']  }}</li>
                         <li>
                             status: {{ $stream['channel']['status']  }}
                         </li>
@@ -80,7 +80,7 @@
                         <li>
                             Streamer: {{ $stream['channel']['display_name']  }}
                         </li>
-                        <li>Steam started on: {{ $stream['display_name']  }}</li>
+                        <li>Steam started on: {{ $stream['created_at']  }}</li>
                         <li>
                             status: {{ $stream['channel']['status']  }}
                         </li>
