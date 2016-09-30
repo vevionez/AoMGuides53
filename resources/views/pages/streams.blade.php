@@ -12,7 +12,7 @@
 
 @section('content')
     <div class="row">
-        <div class="col_lg_2">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <p>
                 All streams are automatically pulled from twitch servers. Every single streamer that is currently streaming Age of Mythology will be listed here!
             </p>
