@@ -41,6 +41,7 @@
                             <iframe class="embed-responsive-item chat_embed" name="twitchchat_{{$stream['_id']}}" id='twitchchat_{{$stream['_id']}}' frameborder='0' scrolling='no'  height='600' width='800'></iframe>
                         </div>
                     </div>
+                    <br>
                 @endforeach
             @endif
             <h2>AOM:TT Streams:</h2>
@@ -69,6 +70,7 @@
                             <iframe class="embed-responsive-item chat_embed" name="twitchchat_{{$stream['_id']}}" id='twitchchat_{{$stream['_id']}}' frameborder='0' scrolling='no'  height='600' width='800'></iframe>
                         </div>
                     </div>
+                    <br>
                 @endforeach
             @endif
             <h2>AOM Vanilla Streams:</h2>
@@ -97,6 +99,7 @@
                             <iframe class="embed-responsive-item chat_embed" name="twitchchat_{{$stream['_id']}}" id='twitchchat_{{$stream['_id']}}' frameborder='0' scrolling='no'  height='600' width='800'></iframe>
                         </div>
                     </div>
+                    <br>
                 @endforeach
             @endif
         </div>
