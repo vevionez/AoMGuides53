@@ -19,7 +19,7 @@
             <h2>AOM:EE Streams:</h2>
             @if($aomeestreams['_total'] != 0)
             @foreach($aomeestreams['streams'] as $stream)
-                <img src="{{$stream['preview']['small']}}">
+                <img src="{{$stream['preview']['medium']}}">
                     <li>
                         Streamer: {{ $stream['channel']['display_name']  }}
                     </li>
@@ -46,7 +46,7 @@
             <h2>AOM:TT Streams:</h2>
             @if($aomttstreams['_total'] != 0)
                 @foreach($aomttstreams['streams'] as $stream)
-                    <img src="{{$stream['preview']['small']}}">
+                    <img src="{{$stream['preview']['medium']}}">
                     <ul>
                         <li>
                             Streamer: {{ $stream['channel']['display_name']  }}
@@ -74,7 +74,7 @@
             <h2>AOM Vanilla Streams:</h2>
             @if($aomstreams['_total'] != 0)
                 @foreach($aomstreams['streams'] as $stream)
-                    <img src="{{$stream['preview']['small']}}">
+                    <img src="{{$stream['preview']['medium']}}">
                     <ul>
                         <li>
                             Streamer: {{ $stream['channel']['display_name']  }}
