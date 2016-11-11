@@ -12,10 +12,10 @@
 
 @section('content')
 
-    <br><br><br><br>
     <img alt="{{$god->name}}" src="/images/{{$god->image}}" />
     <br>
-    This is {{ $god->name }}
+    <h2>{{ $god->name }}</h2>
+    <small>{{$god->description}}</small>
 <br>
     <h4>Guides: </h4>
     <ul>
