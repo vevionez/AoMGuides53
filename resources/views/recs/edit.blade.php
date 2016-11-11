@@ -24,7 +24,7 @@
             {!! Form::label('author', 'Author', ['class' => 'control-label']) !!}
             {!! Form::text('author', null, ['class' => 'form-control']) !!}
             {!! Form::label('patch', 'Patch', ['class' => 'control-label']) !!}
-        {!! Form::select('patch', array('Voobly Balance Patch 1.03' => 'Voobly Balance Patch 1.03','Voobly Balance Patch 1.02' => 'Voobly Balance Patch 1.02','Voobly Balance Patch 1.01' => 'Voobly Balance Patch 1.01', 'Steam' => 'Steam', 'Vanilla AOT' => 'Vanilla AOT'), null, ['class' => 'form-control'])  !!}
+        {!! Form::select('patch', array('Voobly Balance Patch 1.05' => 'Voobly Balance Patch 1.05','Voobly Balance Patch 1.04' => 'Voobly Balance Patch 1.04','Voobly Balance Patch 1.03' => 'Voobly Balance Patch 1.03','Voobly Balance Patch 1.02' => 'Voobly Balance Patch 1.02','Voobly Balance Patch 1.01' => 'Voobly Balance Patch 1.01', 'Steam' => 'Steam', 'Vanilla AOT' => 'Vanilla AOT'), null, ['class' => 'form-control'])  !!}
             {!! Form::label('file_path', 'Recorded Game', ['class' => 'control-label']) !!}
             {!! Form::file('file_path', ['class' => 'form-control']) !!}
             <br/><br/>
