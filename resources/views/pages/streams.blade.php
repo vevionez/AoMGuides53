@@ -30,7 +30,7 @@
                     <li>Viewers: {{ $stream['viewers'] }}</li>
                     <li>Followers: {{ $stream['channel']['followers'] }}</li>
                     <li>
-                        url: <a href="{{ $stream['channel']['url']  }}">{{ $stream['channel']['url']  }}</a>
+                        url: <a href="{{ $stream['channel']['url']  }}" target="_blank">{{ $stream['channel']['url']  }}</a>
                     </li>
                 </ul>
                     <a href="{{ $stream['channel']['url']  }}/embed" target="twitchstream_{{$stream['_id']}}"><button id='watch' onclick="document.getElementById('twitchtoggle_{{$stream['_id']}}').setAttribute('style', '')">Watch Live!</button></a>
@@ -59,7 +59,7 @@
                         <li>Viewers: {{ $stream['viewers'] }}</li>
                         <li>Followers: {{ $stream['channel']['followers'] }}</li>
                         <li>
-                            url: <a href="{{ $stream['channel']['url']  }}">{{ $stream['channel']['url']  }}</a>
+                            url: <a href="{{ $stream['channel']['url']  }}" target="_blank">{{ $stream['channel']['url']  }}</a>
                         </li>
                     </ul>
                     <a href="{{ $stream['channel']['url']  }}/embed" target="twitchstream_{{$stream['_id']}}"><button id='watch' onclick="document.getElementById('twitchtoggle_{{$stream['_id']}}').setAttribute('style', '')">Watch Live!</button></a>
@@ -88,7 +88,7 @@
                         <li>Viewers: {{ $stream['viewers'] }}</li>
                         <li>Followers: {{ $stream['channel']['followers'] }}</li>
                         <li>
-                            url: <a href="{{ $stream['channel']['url']  }}">{{ $stream['channel']['url']  }}</a>
+                            url: <a href="{{ $stream['channel']['url']  }}" target="_blank">{{ $stream['channel']['url']  }}</a>
                         </li>
                     </ul>
                     <a href="{{ $stream['channel']['url']  }}/embed" target="twitchstream_{{$stream['_id']}}"><button id='watch' onclick="document.getElementById('twitchtoggle_{{$stream['_id']}}').setAttribute('style', '')">Watch Live!</button></a>
