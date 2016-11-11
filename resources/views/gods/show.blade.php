@@ -35,9 +35,10 @@
     <br>
 @endforeach
     <br/>
-    And here a bunch of recorded games of {{ $god->name }} plays! <br/><br/>
+    <h4>Recorded Games:</h4>
+    <ul>
     @foreach($recs as $recgame)
-    <a href="/recorded_games/{{$recgame['slug']}}">{{ $recgame['name'] }}</a> Votes: {{$recgame['votes']}} Views: {{$recgame['views']}}
+    <li><a href="/recorded_games/{{$recgame['slug']}}">{{ $recgame['name'] }}</a> Votes: {{$recgame['votes']}} Views: {{$recgame['views']}}
     @if(! Session::get('voted_rec_' . $recgame['id']))
         <div class="vote" style="display: inline-block;">
         {!! Form::open(array('route' => array('recs.upvote', $recgame['slug']), 'method' => 'PATCH')) !!}
@@ -50,8 +51,9 @@
         {!! Form::close() !!}
             </div>
     @endif
-        <br>
+    </li>
         @endforeach
+    </ul>
         <br>
     <div class="youtube_links">
         <h4>Youtube Videos:</h4>
