@@ -17,9 +17,10 @@
     <br>
     This is {{ $god->name }}
 <br>
-    Here is a bunch of guides to get you started on playing {{ $god->name }}! <br/><br/>
+    <h4>Guides: </h4>
+    <ul>
 @foreach($guides as $guide)
-        <a href="/guides/{{$guide['slug']}}">{{ $guide['name'] }}</a> Votes: {{$guide['votes']}} Views: {{$guide['views']}}
+        <li><a href="/guides/{{$guide['slug']}}">{{ $guide['name'] }}</a> Votes: {{$guide['votes']}} Views: {{$guide['views']}}
         @if(! Session::get('voted_guide_' . $guide['id']))
             <div class="vote" style="display: inline-block;">
                 {!! Form::open(array('route' => array('guides.upvote', $guide['slug']), 'method' => 'PATCH')) !!}
@@ -32,8 +33,9 @@
                 {!! Form::close() !!}
             </div>
         @endif
-    <br>
+</li>
 @endforeach
+    </ul>
     <br/>
     <h4>Recorded Games:</h4>
     <ul>
