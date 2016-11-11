@@ -24,12 +24,12 @@
         @if(! Session::get('voted_guide_' . $guide['id']))
             <div class="vote" style="display: inline-block;">
                 {!! Form::open(array('route' => array('guides.upvote', $guide['slug']), 'method' => 'PATCH')) !!}
-                <button type="submit" class="btn btn-default" style="border: 0; background: transparent; color: #ff0000;"><i class="fa fa-angle-double-up fa-2x"></i></button>
+                <button type="submit" class="btn btn-default" style="border: 0; background: transparent; color: #ff0000;"><i class="fa fa-angle-double-up"></i></button>
                 {!! Form::close() !!}
             </div>
             <div class="vote" style="display: inline-block;">
                 {!! Form::open(array('route' => array('guides.downvote', $guide['slug'],), 'method' => 'PATCH')) !!}
-                <button type="submit" class="btn btn-default" style="border: 0; background: transparent; color: #ff0000;"><i class="fa fa-angle-double-down fa-2x"></i></button>
+                <button type="submit" class="btn btn-default" style="border: 0; background: transparent; color: #ff0000;"><i class="fa fa-angle-double-down"></i></button>
                 {!! Form::close() !!}
             </div>
         @endif
@@ -44,12 +44,12 @@
     @if(! Session::get('voted_rec_' . $recgame['id']))
         <div class="vote" style="display: inline-block;">
         {!! Form::open(array('route' => array('recs.upvote', $recgame['slug']), 'method' => 'PATCH')) !!}
-        <button type="submit" class="btn btn-default" style="border: 0; background: transparent; color: #ff0000;"><i class="fa fa-angle-double-up fa-2x"></i></button>
+        <button type="submit" class="btn btn-default" style="border: 0; background: transparent; color: #ff0000;"><i class="fa fa-angle-double-up"></i></button>
         {!! Form::close() !!}
         </div>
             <div class="vote" style="display: inline-block;">
         {!! Form::open(array('route' => array('recs.downvote', $recgame['slug'],), 'method' => 'PATCH')) !!}
-        <button type="submit" class="btn btn-default" style="border: 0; background: transparent; color: #ff0000;"><i class="fa fa-angle-double-down fa-2x"></i></button>
+        <button type="submit" class="btn btn-default" style="border: 0; background: transparent; color: #ff0000;"><i class="fa fa-angle-double-down"></i></button>
         {!! Form::close() !!}
             </div>
     @endif
