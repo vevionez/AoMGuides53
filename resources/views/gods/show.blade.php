@@ -16,7 +16,7 @@
     <br>
     <h2>{{ $god->name }}</h2>
     <small>{{$god->description}}</small>
-<br>
+<br><br><br>
     <h4>Guides: </h4>
     <ul>
 @foreach($guides as $guide)
@@ -61,11 +61,11 @@
         <h4>Youtube Videos:</h4>
         <ul>
         @foreach($videos as $video)
-            <li><a href="{{$video['link']}}">{{$video['name']}}</a> - By: <small>{{$video['author']}}</small></li>
+            <li><a href="{{$video['link']}}" target="_blank">{{$video['name']}}</a> - By: <small>{{$video['author']}}</small></li>
             @endforeach
         </ul>
     </div>
     <br>
     <br>
-    {!! link_to_route('gods.index','Back to Index') !!}
+    {!! link_to_route('gods.index','Back to gods overview') !!}
 @stop
