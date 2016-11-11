@@ -17,19 +17,19 @@
 
             <ul>
                 <li>
-                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=258463209&searchtext=ekanta">Ekanta UI</a>
+                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=258463209&searchtext=ekanta" target="_blank">Ekanta UI</a>
                 </li>
                 <li>
-                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=258042116&searchtext=advanced">Advanced ToolTips</a>
+                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=258042116&searchtext=advanced" target="_blank">Advanced ToolTips</a>
                 </li>
                 <li>
-                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=261352080&searchtext=titans">Titans Game List</a>
+                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=261352080&searchtext=titans" target="_blank">Titans Game List</a>
                 </li>
                 <li>
-                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=260543805&searchtext=upgrades">Upgrade textures</a>
+                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=260543805&searchtext=upgrades" target="_blank">Upgrade textures</a>
                 </li>
                 <li>
-                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=265420375">Scenarios & Random maps</a>
+                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=265420375" target="_blank">Scenarios & Random maps</a>
                 </li>
             </ul>
 
