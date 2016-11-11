@@ -17,10 +17,10 @@
 
                 <ul>
                     <li>
-                        <a href="http://www.twisted-clan.com">TwIsTeD Clan</a>
+                        <a href="http://www.twisted-clan.com" target="_blank">TwIsTeD Clan</a>
                     </li>
                     <li>
-                        <a href="http://www.thedodclan.com/">Deities of Death (DoD) Clan</a>
+                        <a href="http://www.thedodclan.com/" target="_blank">Deities of Death (DoD) Clan</a>
                     </li>
                     <li>
 
@@ -36,10 +36,10 @@
                 <h2>Voobly Clans:</h2>
                 <ul>
                     <li>
-                        <a href="http://twistedclan.voobly.com/">TwIsTeD Clan</a>
+                        <a href="http://twistedclan.voobly.com/" target="_blank">TwIsTeD Clan</a>
                     </li>
                     <li>
-                        <a href="http://thedodclan.voobly.com/">Deities of Death (DoD) Clan</a>
+                        <a href="http://thedodclan.voobly.com/" target="_blank">Deities of Death (DoD) Clan</a>
                     </li>
                     <li></li>
                     <li></li>
