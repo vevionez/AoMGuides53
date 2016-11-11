@@ -50,6 +50,7 @@
         {!! Form::close() !!}
             </div>
     @endif
+        <br>
         @endforeach
         <br>
     <div class="youtube_links">
