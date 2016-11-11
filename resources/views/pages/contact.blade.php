@@ -13,7 +13,7 @@
 @section('content')
         <div class="row">
             <div class="col-lg-3">
-                {!! Html::image('img/bannersmall.png', '', array('class' => 'img-responsive img-rounded')) !!}
+                {!! Html::image('images/contact-guy.jpg', '', array('class' => 'img-responsive img-rounded')) !!}
             </div>
 
             <!-- /.col-md-8 -->
@@ -23,7 +23,7 @@
             </div>
 
             <div class="col-lg-3">
-                {!! Html::image('img/happygirl.png', '', array('class' => 'img-responsive img-rounded')) !!}
+                {!! Html::image('images/contact-girl.jpg', '', array('class' => 'img-responsive img-rounded')) !!}
             </div>
 
             <!-- /.col-md-4 -->
