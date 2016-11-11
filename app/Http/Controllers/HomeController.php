@@ -1,6 +1,7 @@
 <?php namespace App\Http\Controllers;
 
 use App\guides;
+use Illuminate\Support\Facades\Cache;
 
 class HomeController extends Controller {
 
@@ -71,9 +72,19 @@ class HomeController extends Controller {
 		//aom:tt Age%20of%20Mythology%3A%20The%20Titans
 		//aom:ee Age%20of%20Mythology%3A%20Extended%20Edition
 		//aom : Age%20of%20Mythology
-		$aomeestreams = getstreamsbygame("Age%20of%20Mythology%3A%20Extended%20Edition");
-		$aomttstreams = getstreamsbygame("Age%20of%20Mythology%3A%20The%20Titans");
-		$aomstreams = getstreamsbygame("Age%20of%20Mythology");
+		//$aomeestreams = getstreamsbygame("Age%20of%20Mythology%3A%20Extended%20Edition");
+		//$aomttstreams = getstreamsbygame("Age%20of%20Mythology%3A%20The%20Titans");
+		//$aomstreams = getstreamsbygame("Age%20of%20Mythology");
+
+		$aomeestreams = Cache::remember('users', '5', function() {
+			return getstreamsbygame("Age%20of%20Mythology%3A%20Extended%20Edition");
+		});
+		$aomttstreams = Cache::remember('users', '5', function() {
+			return getstreamsbygame("Age%20of%20Mythology%3A%20The%20Titans");
+		});
+		$aomstreams = Cache::remember('users', '5', function() {
+			return getstreamsbygame("Age%20of%20Mythology");
+		});
 
 
 		return view('pages.streams', compact("aomeestreams", "aomttstreams", "aomstreams"));
