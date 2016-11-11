@@ -76,13 +76,13 @@ class HomeController extends Controller {
 		//$aomttstreams = getstreamsbygame("Age%20of%20Mythology%3A%20The%20Titans");
 		//$aomstreams = getstreamsbygame("Age%20of%20Mythology");
 
-		$aomeestreams = Cache::remember('users', '5', function() {
+		$aomeestreams = Cache::remember('aomeestreams', '5', function() {
 			return getstreamsbygame("Age%20of%20Mythology%3A%20Extended%20Edition");
 		});
-		$aomttstreams = Cache::remember('users', '5', function() {
+		$aomttstreams = Cache::remember('aomttstreams', '5', function() {
 			return getstreamsbygame("Age%20of%20Mythology%3A%20The%20Titans");
 		});
-		$aomstreams = Cache::remember('users', '5', function() {
+		$aomstreams = Cache::remember('aomstreams', '5', function() {
 			return getstreamsbygame("Age%20of%20Mythology");
 		});
 
