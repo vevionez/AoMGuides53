@@ -36,10 +36,10 @@
             <h2>Useful Aom/Aot Tools:</h2>
             <ul>
                 <li>
-                    More to be added soon ^_^
+                    <a href="downloads/Age_Of_Mythology_Disk_1.iso">Age of Mythology Disk 1 (Direct download link)</a>
                 </li>
-                <li></li>
-                <li></li>
+                <li><a href="downloads/Age_Of_Mythology_Disk_2.iso">Age of Mythology Disk 2 (Direct download link)</a></li>
+                <li><a href="downloads/Age_Of_Mythology_The_Titans.iso">Age of Mythology: The Titans (Direct download link)</a></li>
                 <li></li>
                 <li></li>
                 <li></li>
