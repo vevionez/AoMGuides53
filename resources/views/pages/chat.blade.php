@@ -13,7 +13,7 @@
 @section('content')
     <div class="row">
         <div class="col_lg_2">
-            <h2>Join our chatroom!:</h2>
+            <h2>Aomguides IRC Channel:</h2>
             <iframe src="https://kiwiirc.com/client/irc.ugaris.com/?nick=AoM_|?#aomguides" style="border:0; width:100%; height:450px;"></iframe>
 
 
