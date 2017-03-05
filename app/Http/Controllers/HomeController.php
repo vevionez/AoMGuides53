@@ -47,6 +47,14 @@ class HomeController extends Controller {
 	{
 		return view('pages.clans');
 	}
+	public function chat()
+	{
+		return view('pages.chat');
+	}
+	public function teamspeak()
+	{
+		return view('pages.teamspeak');
+	}
 
 	public function streams()
 	{

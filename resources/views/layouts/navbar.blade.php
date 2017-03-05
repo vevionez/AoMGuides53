@@ -16,8 +16,15 @@
                 <li {{ (Request::is('guides*') ? 'class=active' : '') }}><a href="{{ URL::to('/guides') }}">Guides</a></li>
                 <li {{ (Request::is('recorded_games*') ? 'class=active' : '') }}><a href="{{ URL::to('/recorded_games') }}">Recorded Games</a></li>
                 <li {{ (Request::is('tools*') ? 'class=active' : '') }}><a href="{{ URL::to('/tools') }}">Tools & Mods</a></li>
-                <li {{ (Request::is('clans*') ? 'class=active' : '') }}><a href="{{ URL::to('/clans') }}">Clans</a></li>
-                <li {{ (Request::is('streams*') ? 'class=active' : '') }}><a href="{{ URL::to('/streams') }}">Streams</a></li>
+                <li class="dropdown-toggle">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li {{ (Request::is('chat*') ? 'class=active' : '') }}><a href="{{ URL::to('/chat') }}">Chat</a></li>
+                        <li {{ (Request::is('teamspeak*') ? 'class=active' : '') }}><a href="{{ URL::to('/teamspeak') }}">Teamspeak</a></li>
+                        <li {{ (Request::is('clans*') ? 'class=active' : '') }}><a href="{{ URL::to('/clans') }}">Clans</a></li>
+                        <li {{ (Request::is('streams*') ? 'class=active' : '') }}><a href="{{ URL::to('/streams') }}">Streams</a></li>
+                    </ul>
+                </li>
                 <li {{ (Request::is('contact_us*') ? 'class=active' : '') }}><a href="{{ URL::to('/contact_us') }}">Contact Us</a></li>
             </ul>
             <!--Right side Navigation -->

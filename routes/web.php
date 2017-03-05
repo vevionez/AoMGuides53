@@ -37,3 +37,5 @@ Route::get('contact_us', array('as' => 'contact_us', 'uses' => 'MailController@s
 Route::get('tools', array('as' => 'tools', 'uses' => 'HomeController@tools'));
 Route::get('clans', array('as' => 'clans', 'uses' => 'HomeController@clans'));
 Route::get('streams', array('as' => 'streams', 'uses' => 'HomeController@streams'));
+Route::get('chat', array('as' => 'chat', 'uses' => 'HomeController@chat'));
+Route::get('teamspeak', array('as' => 'teamspeak', 'uses' => 'HomeController@teamspeak'));
