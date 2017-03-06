@@ -3,11 +3,11 @@
 {{-- Web site Title --}}
 @section('title')
     @parent
-    Clans
+    Teamspeak
 @stop
 @section('description')
     @parent
-    Overview and links to active Age of Mythology clans.
+    Information about Aomguides free and public teamspeak server.
 @stop
 
 @section('content')

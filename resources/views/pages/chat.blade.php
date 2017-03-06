@@ -3,11 +3,11 @@
 {{-- Web site Title --}}
 @section('title')
     @parent
-    Clans
+    Chat
 @stop
 @section('description')
     @parent
-    Overview and links to active Age of Mythology clans.
+    Connect with us over IRC chat and ask any questions you wish, or just drop in for a friendly chat about Age of Mythology.
 @stop
 
 @section('content')
